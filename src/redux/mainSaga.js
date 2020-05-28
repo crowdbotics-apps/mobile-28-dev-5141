@@ -2,6 +2,7 @@ import { all, takeEvery, take } from "redux-saga/effects";
 
 
 //@BlueprintReduxSagaImportInsertion
+import EmailAuth4801Saga from '../features/EmailAuth4801/redux/sagas';
 import EmailAuth4800Saga from '../features/EmailAuth4800/redux/sagas';
 import EmailAuth4799Saga from '../features/EmailAuth4799/redux/sagas';
 import EmailAuth4798Saga from '../features/EmailAuth4798/redux/sagas';
@@ -19,6 +20,7 @@ export function* mainSaga() {
 
 
     //@BlueprintReduxSagaMainInsertion
+EmailAuth4801Saga,
 EmailAuth4800Saga,
 EmailAuth4799Saga,
 EmailAuth4798Saga,
